@@ -40,10 +40,10 @@ nav a:hover{
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4,100px);
     grid-template-areas:
-    "section section section section"
-    "main main  Mmin main"
-    "main Main  main main"
-    "footer footer footer footer";
+    "gridSection gridSection gridSection gridSection"
+    "gridMain gridMain  gridMain gridMain"
+    "gridMain gridMain gridMain gridMain"
+    "gridFooter gridFooter gridFooter gridFooter";
 }
 
 /* principales grid-areas del dcto html a las que se le aplicaran los estilos de  todas las paginas del documento html*/
@@ -160,8 +160,8 @@ footer{
 /*ACA COMIENZA EL FORMULARIO conteneder-padre con cada uno de sus hijos en INDEX, CONTACTO, COMENZAR Y ACCESSO*/
 .gridMainForm{
     display:gridMainForm;
+    padding: 110px;
     font-weight: bolder;
-    margin: 80px;
 
 }
 
