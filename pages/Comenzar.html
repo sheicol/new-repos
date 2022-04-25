@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenzar</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+    <body>
+        <!--HEADER (estilizado con flex-box y box-modeling)-->
+        <header class="header">
+        <nav class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/Curso.html">Curso</a>
+            <a href="../pages/Contacto.html">Contacto</a>
+            <a href="../pages/Comenzar.html">Comenzar</a>
+            <a href="../pages/Acceso.html">Acceso</a>
+        </nav>
+        </header>
+        <!--SECTION (primera parte de grid) (abarca logo-imagen- slogan-h1- y texto-h2 de la academia. se le dan los estilos como primer area de grid )-->
+        <section class="gridSection">
+            <div class="gridSectionLogo">
+                <img src="../multimedia/lele.jpg"  alt="Le-Pew">
+            </div>
+        </section>
+        <section>   
+            <div class="gridSectionSlogan">
+                <h1>Contact Support</h1>
+            </div>
+            <div class="SectionText">
+                <h2>¿Por qué necesitas aprender Inglés ahora mismo?</h2>
+                    <p>
+                    Aumenta un 70% las probabilidades de conseguir un buen empleo.
+            80% de las ofertas de empleos de alto nivel tienen el inglés como requisito.
+            Aumenta tu ingreso en un 40%.
+            El 75% de la bibliografía científica y documentación técnica está en inglés.
+            Aprendemos en comunidad
+            En Puff tenemos grupos de estudio donde podrás compartir tus dudas, aportes y participar de eventos exclusivos para mejorar nuestro Inglés 🚀
+                    </p>
+            </div>
+        </section>
+        <!--MAIN, SEGUNDA PARTE DE GRID. abarca una imagen y el formulario de contacto para la seccion "comenzar"-->
+        <main class="gridMain">
+            <div class="gridMainMedia"> 
+                <img class="gridMainimg" src="../multimedia/englishbs.jpg">
+            </div>
+            <div>
+            <!--formulario para comenzar-->        
+            <form class="gridMainForm">
+                <h3>CONTACT SUPPORT PARA COMENZAR</h3> 
+                <div class="form1">Nombre:<input name="Nombre" type="text"></div>
+                <div class="form2">Correo electronico: <input name="Correo Electronico" type="email"></div>
+                <div class="form2">Deja tu mensaje aqui</div>
+                <textarea class="form3" name="text" cols="60" rows="5"></textarea>
+                <div> <input class="form5" name="submit"type="submit" value="Enviar ahora">
+                </div>
+            </div>
+            </form>
+        </main>
+        <!--FOOTER. 3ER Y ULTIMA PARTE DE GRID(con iconos de redes sociales e email de contacto)-->  
+        <footer class="gridFooter">
+            <span>
+                <img class="gridFooterUno"src="../multimedia/instaicon.png">
+            </span>
+            <span>
+                <img class="gridFooterDos" src="../multimedia/fbicon.png">
+            </span>
+            <span>
+                <p class="gridFooterTres">Informacion de contacto: <a href="Le-PewEnglish@gmail.com">Le-PewEnglish@gmail.com</a></p>
+            </span>
+        </footer>
+</body>
+</html>

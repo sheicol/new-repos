@@ -1,0 +1,554 @@
+/*estilos aplicado a todas las paginas del documento html*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    box-sizing: border-box;   
+}
+
+/* estilos y trasnformaciones aplicados con box-modeling a todas las paginas del documento html*/
+.header{
+    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
+    width: 100%;   
+}
+
+/* estilos aplicados con box-modeling al menu ppl  a todas las paginas del documento html (nav)*/
+.nav{
+    display: flex;
+    justify-content:space-evenly;
+    flex: wrap;    
+}
+
+/* estilos aplicados con box-modeling a los anchors del header de las paginas del documento html*/
+nav a{
+    color:blueviolet;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 50px;   
+}
+/*transformaciones aplicadas a nav anchors*/
+nav a:hover{
+    color: white;
+}
+
+/*COMIENZO DE GRIDS para. grid areas, columns&rows estilo aplicado a todas las paginas del documento html*/
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4,100px);
+    grid-template-areas:
+    "gridSection gridSection gridSection gridSection"
+    "gridMain gridMain  gridMain gridMain"
+    "gridMain gridMain gridMain gridMain"
+    "gridFooter gridFooter gridFooter gridFooter gridFooter";
+}
+
+/* principales grid-areas del dcto html a las que se le aplicaran los estilos de  todas las paginas del documento html*/
+section{
+    grid-area: section;
+    }
+    
+main{
+    grid-area:main;
+    }
+    
+footer{
+    grid-area:footer;
+    }
+
+/*GRIDSECTION.(a partir de aca, esta todo lo que abarca SECTION que es la primera parte a la que se le aplica  grid en todo el dcto). estilos para aplicar a logo y slogan de la academia, debajo de header*/
+.gridSection{
+    display: grid;
+    grid-template-areas: "gridSection gridSection gridSection gridSection";
+}
+
+/*estilos aplicados al logo de la academia para todas las paginas del documento html*/
+.gridSectionLogo{
+    margin-top: 80px;
+    position:scroll;
+    border-width:5px;
+    border-color: gold;
+    border-style: solid;
+    width: 330px;
+    padding:2px;
+    margin-bottom: 20px;
+    transform: rotate(340deg);
+    transition: 5s;
+    transition-duration: 5s;
+}
+
+/*estilos y transformaciones para h1, slogan de la academia para todas las paginas del documento html*/
+.gridSectionSlogan{
+    grid-area: slogan;
+    text-transform: uppercase;
+    color:gold;
+    font-size: large;
+    margin-top: 80px;
+    animation-name: slogan;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-delay: 3s;
+}
+
+/*seguimos con animaciones para h1, slogan.*/
+@keyframes slogan {
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: blue;
+        font-weight: 400;
+        font-size:large;
+    }
+    50%{
+    color: violet;
+    font-size: x-large;
+    font-weight: 700;
+    animation-direction: reverse;
+    }
+    75%{
+        color: violet;
+        font-size: x-large;
+        font-weight: 700;
+        animation-direction: reverse;
+    }
+    100%{
+    color: purple;
+    font-size: xx-large;
+    font-weight: 900;
+    animation-direction: reverse;
+    }
+
+}
+
+/*estilos para h2, texto superior para  referirse a la academia en la seccion CURSO y COMENZAR */
+.SectionText{
+    display: grid;
+    text-transform: uppercase;
+    color:darkslateblue;
+    font-size: x-large;
+    text-align: right;
+    font-weight: 900;   
+}
+
+/*GRIDMAIN. (a partir de aca, esta todo lo que abarca MAIN que es la segunda parte a la que se le aplica  grid en el dcto).-HAY una seccion de VIDEO, IMAGENES Y FORMULARIO.(VER MAS ABAJO).*/
+.gridMain{
+    display: grid;
+    grid-template-areas:
+    "gridMain gridMain gridMain gridMain"
+    "gridMain gridMain gridMain gridMain";
+}
+
+/*COMIENZO DE MAINMEDIA y estilos aplicados al mismo EN INDEX,CONTACTO Y ACCESSO */
+.gridMainMedia{
+    display: gridMainMedia;
+   
+}
+
+.mediaVideo1{
+    grid-area:mediavideo1;    
+}
+
+.mediaVideo2{
+    grid-area:mediavideo2;  
+}
+
+/*ACA COMIENZA EL FORMULARIO conteneder-padre con cada uno de sus hijos en INDEX, CONTACTO, COMENZAR Y ACCESSO*/
+.gridMainForm{
+    display:gridMainForm;
+    padding: 110px;
+    font-weight: bolder;
+    background-color: lightblue;
+
+}
+
+/*transformaciones para inputs y textarea en class form*/
+input:hover{
+    border-color: #feff00;
+    border-radius: 5px;
+}
+
+input:focus{
+    transform: scale(2px,2px);
+    color: #feff00;
+}
+
+textarea:hover{
+    border-color: #feff00;
+    border-radius: 5px;
+}
+
+textarea:focus{
+    transform: scale(2px,2px);
+    color: #feff00;
+}
+
+/*nombre*/
+.form1{
+    grid-area: form1;
+    margin: 20px;
+}
+
+
+/*Telefono*/
+.form2{
+    grid-area: form2;
+    margin: 20px;
+}
+/*Email*/
+.form3{
+    grid-area:form3;
+    margin: 20px;
+}
+/*Seleccion de Pais*/
+.form4{
+    grid-area:form4;
+    margin: 20px;
+}
+/*Tipo de Solicitud*/
+.form5{
+    grid-area: form5;
+    margin: 20px;
+}
+/*Comentarios*/
+.form6{
+    grid-area: form6;
+    margin: 20px 20px 20px 20px; 
+}
+/*Condiciones de uso*/
+.form6c{
+    grid-area: form6c;
+    margin: 0px 20px 20px 20px;
+}
+/*Checkbox*/
+.form7{
+    grid-area: form6;
+    margin: 20px;
+}
+/*botones de envio*/
+.form8{
+    grid-area: form6;
+    margin: 20px;
+    text-align: center;
+}
+
+/*COMIENZO DE MAIN ARTICLE EN LA PAGINA CURSO y estilos aplicados al mismo*/
+.gridMainUno{
+    display:gridMainUno;
+    text-align:justify;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: gold;
+    border-width: 10px;
+    margin: 10px;
+}
+
+.gridMainDos{
+    display:gridMainDos;
+    text-align:justify;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: gold;
+    border-width: 10px;
+    margin: 10px;
+}
+
+/*FINAL DE MAIN EN LA PAGINA CURSO y estilos aplicados al mismo*/
+.gridMainTres{
+    display:gridMainTres;
+    text-align:justify;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: gold;
+    border-width: 10px;
+    margin: 10px;
+    padding:15px
+}
+
+/*COMIENZO DE MAIN IMAG PARA LA PAGINA COMENZAR*/
+.gridMainImg{
+    display:grid;
+    border-width:5px;
+    border-color: gold;
+    border-style: solid;
+    width: 680px;
+    height: 760px;
+}
+
+/*GRIDFOOTER (estilos aplicados al pie de pagina con iconos de redes sociales PARA TODAS LAS PAGINAS DEL DCTO)*/
+.gridFooter{
+    display: grid;
+    grid-template-areas: "gridFooter gridFooter gridFooter gridFooter gridFooter";
+    justify-content: space-around;
+    }
+/*instagram icon*/ 
+.gridFooterUno{
+    grid-area:footer;
+    width: 100px;
+    height: 100px;
+    margin: 100px; 
+    background-color: gold;
+    padding: 30px;
+}
+/*facebook icon*/
+.gridFooterDos{
+    grid-area:footer;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background-color: gold; 
+    padding: 30px;   
+    }
+
+/*estilos aplicados al texto de contacto en footer*/
+.gridFooterTres{
+    grid-area:footer;
+    margin: 100px;
+    font-size: xx-large;
+    color: black;
+    font-weight: 900;
+    background-color: gold;
+    padding: 19px;
+}  
+
+
+
+
+/*MEDIA QUERIES PARA DISPOSITIVO MOBIL*/
+@media screen and (max-width: 320px) {
+    /*grid areas, columns&rows*/
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4,25px);
+    
+        grid-template-areas:"gridsection"
+                            "gridMain"
+                            "gridMain"
+                            "gridFooter";
+    }
+    .header{
+        position: fixed;
+        width: 20%;   
+    }
+    
+    /* estilos aplicados al menu ppl del html y con (nav)  a todas las paginas del documento html*/
+    .nav{
+        display: flex;
+        justify-content:space-between;
+        flex: wrap;
+        
+    }
+    
+    /* estilos aplicados a a los anchors del header a todas las paginas del documento html*/
+    nav a{
+        background-color:aqua;
+        color: black;
+        text-decoration: none;
+        font-size: large;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 20px;
+    
+    }
+    /* principales grid-areas a las que se le aplicaran los estilos*/
+    section{
+        grid-area: section;
+        }
+        
+    main{
+        grid-area:main;
+        }
+        
+    footer{
+        grid-area:footer;
+        }
+    
+    /*gridSection. clase para aplicar estilos a logo y slogan de la academia, debajo de header para todas las paginas del documento html*/
+    .gridSection{
+        display: grid;
+        grid-template-areas: "section";
+    }
+    
+    /*estilos aplicados al logo de la academia  a todas las paginas del documento html*/
+    .gridSectionLogo{
+        position:scroll;
+        border-width:5px;
+        border-color: gold;
+        border-style: solid;
+        width: 330px;
+        padding:2px;
+    }
+    /*estilos para h1, slogan de la academia  a todas las paginas del documento html*/
+    .gridSectionSlogan{
+        grid-area:slogan;
+        text-transform: uppercase;
+        color:aqua;
+        font-size: larger;
+        font-size: large;
+        text-align: start;
+    }
+/*estilos para h2, texto superior para  referirse a la academia en la pagina CURSO y COMENZAR*/
+    .SectionText{
+    display:flex;
+    text-transform: capitalize;
+    color:darkslateblue;
+    font-size: smaller;
+    font-weight: 900; 
+    }
+
+    /*GRIDMAIN. (a partir de aca, esta todo lo que abarca MAIN que es la segunda parte a la que se le aplica  grid en el dcto). estilos para aplicar a multimedia Y formulario para INDEX, CONTACTO, COMENZAR Y ACCESO y articulos para la pagina CURSO. contenedor padre con sus diferentes forms que son sus hijos y esta justo despues de section*/
+    .gridMain{
+    display: grid;
+    align-content:space-around;
+    grid-template-areas:"main"
+                        "main";
+    }
+    
+    /*FORMULARIO DEL PROYECTO EN las paginas INDEX, CONTACTO, COMENZAR Y ACCESO del documento html*/
+    .gridMainForm{
+        grid-area:main;
+        padding: 2px;
+        font-weight: bolder;
+        background-color:bisque;
+    }
+    
+    /*COMIENZO DE LOS DATOS DE FORMULARIO. DESDE FORM1 A FORM8*/
+    .form1{
+        grid-area: form1;
+        margin: 20px;
+    }
+    
+    .form2{
+        grid-area: form2;
+        margin: 20px;
+    }
+    
+    .form3{
+        grid-area:form3;
+        margin: 20px;
+    }
+    
+    .form4{
+        grid-area:form4;
+        margin: 20px;
+    }
+    
+    .form5{
+        grid-area: form5;
+        margin: 20px;
+    }
+    
+    .form6{
+        grid-area: form6;
+        margin: 20px 20px 0px 20px; 
+    }
+    
+    .form6c{
+        grid-area: form6c;
+        margin: 0px 20px 20px 20px;
+    }
+    
+    .form7{
+        grid-area: form6;
+        margin: 20px;
+    }
+    
+    .form8{
+        grid-area: form6;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .gridMainMedia{
+        display: grid;
+       
+    }
+    
+    .mediaVideo1{
+        grid-area:mediavideo1;
+        width: 400px;
+        height: 150px;
+        
+    }
+    .mediaVideo2{
+        grid-area:mediavideo2;
+        width: 400px;
+        height: 150px;
+        
+    }
+
+/*COMIENZO DE MAINA-RTICLE EN LA PAGINA CURSO y estilos aplicados al mismo*/
+    .gridMainUno{
+        display: grid;
+        text-align:justify;
+        text-transform:capitalize;
+        border-style: solid;
+        border-color: aqua;
+        border-width: 10px;
+    }
+    
+    .gridMainDos{
+        display: grid;
+        text-align:justify;
+        text-transform: uppercase;
+        border-style: solid;
+        border-color: aqua;
+        border-width: 10px;
+    }
+    
+    /*FINAL DE MAIN EN LA PAGINA CURSO y estilos aplicados al mismo*/
+    .gridMainTres{
+        display: grid;
+        text-align:justify;
+        text-transform: uppercase;
+        border-style: solid;
+        border-color: aqua;
+        border-width: 10px;
+    
+    }
+    /*COMIENZO DE MAIN IMAG PARA LA PAGINA COMENZAR*/
+    .gridMainImg{
+        display: grid;
+        border-width:5px;
+        border-color: gold;
+        border-style: solid;
+        width: 420px;
+        height: 150px;
+    }
+    
+    /* estilos aplicados al footer para todas las paginas del dcto (gridFooter)*/
+    .gridFooter{
+        display:grid;
+        align-items: center;
+        grid-template-areas:"footer";
+        }
+    /*instagram icon*/ 
+    .gridFooterUno{
+        grid-area:footer;
+        width: 100px;
+        height: 100px; 
+        background-color: aqua;
+    }
+    /*facebook icon*/
+    .gridFooterDos{
+        grid-area:footer;
+        width: 100px;
+        height: 100px; 
+        background-color: aqua;
+        }
+    
+    /*estilos aplicados al texto de contacto en footer*/
+    .gridFooterTres{
+        grid-area: footer;
+        font-size: xx-large;
+        color: black;
+        font-weight: 900;
+        background-color: aqua;
+    }  
+}
+

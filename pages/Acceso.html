@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+    <body>
+        <!--HEADER no hace parte de grid. aplicado los stilos con box modeling y flexbox-->
+        <header class="header">
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/Curso.html">Curso</a>
+                <a href="../pages/Contacto.html">Contacto</a>
+                <a href="../pages/Comenzar.html">Comenzar</a>
+                <a href="../pages/Acceso.html">Acceso</a>
+            </nav>
+        </header>
+<!--SECTION (abarca logo-imagen- y slogan-h1- de la academia. se le dan los estilos como primer area de grid )-->
+        <section class="gridSection">
+            <div class="gridSectionLogo"><!--imagen sobre doc,lepew-->
+                <img src="../multimedia/lele.jpg"  alt="Le-Pew">
+            </div>
+        </section>
+        <section class="gridSection">
+            <div class="gridSectionSlogan">
+                <h1>LOGIN!<h1><!--logo-->
+            </div>
+        </section> 
+        <!--COMIENzO DE MAINMEDIA-->
+        <main class="gridMain">
+            <div class="gridMainMedia">
+            <div>
+                <iframe class="mediaVideo1" width="680" height="380" src="https://www.youtube.com/embed/HV6h7MRrRNA" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>   
+            </div>
+            <div>
+                <iframe class="mediaVideo2"  width="680" height="380" src="https://www.youtube.com/embed/NNamZZsggM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div>
+            <!--comienzo de mainform-->
+            <form class="gridMainForm">
+            <fieldset>
+                <div class="form1">E-mail:<input name="email" type="text"></div>
+                <div class="form2">Confirm Email:<input name="Email type="text"></div>
+                <div class="form2">Contrasena:<input name="Contrasena" type="password"></div>
+                <div class="form4">Login:<input name="boton de envio" type="submit"></div>
+            </fieldset>
+            </form>
+        </main>
+        <!--FOOTER (con iconos de redes sociales e email de contacto)-->  
+        <footer class="gridFooter">
+            <span>
+                <img class="gridFooterUno"src="../multimedia/instaicon.png">
+            </span>
+            <span>
+                <img class="gridFooterDos" src="../multimedia/fbicon.png">
+            </span>
+            <span>
+                <p class="gridFooterTres">Informacion de contacto: <a href="Le-PewEnglish@gmail.com">Le-PewEnglish@gmail.com</a></p>
+            </span>
+        </footer>
+</body>
+</html>

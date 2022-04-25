@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<!--HEADER (estilizado con flex-box y box-modeling)-->
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/Curso.html">Curso</a>
+            <a href="../pages/Contacto.html">Contacto</a>
+            <a href="../pages/Comenzar.html">Comenzar</a>
+            <a href="../pages/Acceso.html">Acceso</a>
+        </nav>
+    </header>
+    <!--SECTION PRIMERA PARTE DE GRID (abarca logo-imagen- y slogan-h1- de la academia. se le dan los estilos como primer area de grid )-->
+    <section class="gridSection">
+        <div class="gridSectionLogo"><!--imagen sobre doc,lepew-->
+            <img src="../multimedia/lele.jpg"  alt="Le-Pew">
+        </div>
+        <div>
+            <h1 class="gridSectionSlogan">Queremos Acompañarte!</h1>
+        </div>
+    </section>
+    <!--MAINSEGUNDA PARTE DE GRID (abarca dos videos como elementos multimedia y formulario de contacto)-->
+    <main class="gridMain"> 
+        <div class="gridMainMedia">
+        <div>
+            <iframe class="mediaVideo1" width="680" height="380" src="https://www.youtube.com/embed/HV6h7MRrRNA" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>   
+        </div>
+        <div>
+            <iframe class="mediaVideo2"  width="680" height="380" src="https://www.youtube.com/embed/NNamZZsggM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        <!--formulario de contacto con contenedor padre e item-hijos para poder aplicar estilos-->  
+        <form class="gridMainForm">
+            <fieldset>
+            <!--COomienzo de datos de formulario-->
+            <legend >Dejanos tus datos.</legend>
+            <div class="form1">
+                <label for="nombre_telefono">Nombre</label>
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <label for="nombre_telefono">Telefono</label>
+                <input type="text" name="Telefono" placeholder="Telefono">
+            </div>
+            <div class="form2">
+                <label for="Correo Electronico"> Correo Electronico</label>
+                <input type="text" name="E-mail" placeholder="Correo Electronico">
+            </div>
+            <div class="form3">
+                <select name="Pais">
+                <option value="Seleccionar Pais">Seleccionar Pais</option>
+                <option value="A">Argentina</option>
+                <option value="B">Bolivia</option>
+                <option value="C">Colombia</option>
+                <option value="D">Peru</option>                    <option value="E">Venezuela</option>
+                </select>
+            </div>
+            <div class="form4">
+                <select name="Solicitud">
+                    <option value="Tipo de Solicitud">Tipo de Solicitud</option>
+                    <option value="C">Cotizacion</option>
+                    <option value="A">Academico</option>
+                    <option value="SC">Servicio al Cliente</option>
+                    <option value="C">Cobranzas</option>
+                </select>
+            </div>
+            <div class="form6">Comentarios</div>
+                <textarea  class="form6" name="text" cols="60" rows="5"></textarea>                <div class="form7">Acepto los terminos y condiciones de uso.
+                <input type="checkbox" value="Check">
+            </div> 
+            <div class="form8">            
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Limpiar formulario">                  </div>
+            </fieldset>
+        </form>
+    </main>
+    <!--FOOTER. ERA PARTE DE GRID (con iconos de redes sociales e email de contacto)-->  
+    <footer class="gridFooter">
+        <span>
+            <img class="gridFooterUno"src="../multimedia/instaicon.png">
+        </span>
+        <span>
+            <img class="gridFooterDos" src="../multimedia/fbicon.png">
+        </span>
+        <span>
+            <p class="gridFooterTres">Informacion de contacto: <a href="Le-PewEnglish@gmail.com">Le-PewEnglish@gmail.com</a></p>
+        </span>
+    </footer>
+</body>
+</html>
