@@ -10,7 +10,7 @@
 
 /* estilos y trasnformaciones aplicados con box-modeling a todas las paginas del documento html*/
 .header{
-    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
+    background-image: linear-gradient(to right, #EBF5FB,#D6EAF8 , #AED6F1);
     width: 100%;   
 }
 
@@ -23,12 +23,11 @@
 
 /* estilos aplicados con box-modeling a los anchors del header de las paginas del documento html*/
 nav a{
-    color:blueviolet;
+    color:blue;
     text-decoration: none;
     font-size: x-large;
     font-weight: bolder;
-    padding: 10px;
-    margin: 50px;   
+    margin: 20px;   
 }
 /*transformaciones aplicadas a nav anchors*/
 nav a:hover{
@@ -62,7 +61,7 @@ footer{
 
 /*GRIDSECTION.(a partir de aca, esta todo lo que abarca SECTION que es la primera parte a la que se le aplica  grid en todo el dcto). estilos para aplicar a logo y slogan de la academia, debajo de header*/
 .gridSection{
-    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
+    background-image: linear-gradient(to right, #EBF5FB,#D6EAF8 , #AED6F1);
     display: grid;
     grid-template-areas: "gridSection gridSection gridSection gridSection";
 }
@@ -163,7 +162,6 @@ footer{
     display:gridMainForm;
     padding: 110px;
     font-weight: bolder;
-    background-color: lightblue;
 
 }
 
@@ -285,7 +283,7 @@ textarea:focus{
     display: grid;
     grid-template-areas: "gridFooter gridFooter gridFooter gridFooter gridFooter";
     justify-content: space-around;
-    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
+    background-image:linear-gradient(to right, #EBF5FB,#D6EAF8 , #AED6F1);
     }
 /*instagram icon*/ 
 .gridFooterUno{
