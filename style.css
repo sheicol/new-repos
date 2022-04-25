@@ -284,6 +284,7 @@ textarea:focus{
     display: grid;
     grid-template-areas: "gridFooter gridFooter gridFooter gridFooter gridFooter";
     justify-content: space-around;
+    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
     }
 /*instagram icon*/ 
 .gridFooterUno{
