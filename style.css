@@ -62,6 +62,7 @@ footer{
 
 /*GRIDSECTION.(a partir de aca, esta todo lo que abarca SECTION que es la primera parte a la que se le aplica  grid en todo el dcto). estilos para aplicar a logo y slogan de la academia, debajo de header*/
 .gridSection{
+    background-image: linear-gradient(to right, #e7b9fe, #90cdeb, #feff00);
     display: grid;
     grid-template-areas: "gridSection gridSection gridSection gridSection";
 }
@@ -292,7 +293,6 @@ textarea:focus{
     width: 100px;
     height: 100px;
     margin: 100px; 
-    background-color: gold;
     padding: 30px;
 }
 /*facebook icon*/
@@ -301,7 +301,6 @@ textarea:focus{
     width: 100px;
     height: 100px;
     margin: 100px;
-    background-color: gold; 
     padding: 30px;   
     }
 
@@ -312,8 +311,7 @@ textarea:focus{
     font-size: xx-large;
     color: black;
     font-weight: 900;
-    background-color: gold;
-    padding: 19px;
+    padding: 30px;
 }  
 
 
