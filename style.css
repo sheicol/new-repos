@@ -100,24 +100,24 @@ footer{
         color: yellow;
     }
     25%{
-        color: blue;
+        color: gold;
         font-weight: 400;
         font-size:large;
     }
     50%{
-    color: violet;
+    color: lightgoldenrodyellow;
     font-size: x-large;
     font-weight: 700;
     animation-direction: reverse;
     }
     75%{
-        color: violet;
+        color: white;
         font-size: x-large;
         font-weight: 700;
         animation-direction: reverse;
     }
     100%{
-    color: purple;
+    color: whitesmoke;
     font-size: xx-large;
     font-weight: 900;
     animation-direction: reverse;
